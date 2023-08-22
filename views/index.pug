@@ -1,0 +1,60 @@
+//- index.pug
+doctype html
+html
+  head
+    title papai dance academy 
+    style 
+      include ../static/style.css
+  body
+    nav#navbar.top 
+        ul 
+            div#logo
+                img(src="static/img/img2.png", alt="")
+                | PDA
+            li #[a(href='/') Home]
+            li #[a(href='/') About]
+            li #[a(href='/') contact] 
+            li #[a(href='/') Service]
+            li #[a(href='/') Class Info]
+
+    section#introSection 
+          div Welcome To Papai's Dance Academy
+          div.small eat sleep dance repeat
+
+    section#missionSection
+          h2 Our Mission
+          div.card 
+            h3 Dance Perfection
+            div.card-box 
+              div.card-img 
+                  img(src="/static/img/img1.png", alt="")
+              div.card-content 
+                  p this is the best dance academy of the universe
+          div.card 
+            h3 Dance The Way You Like
+            div.card-box 
+              div.card-img 
+                  img(src="/static/img/img3.png", alt="")
+              div.card-content 
+                  p this is the best dance academy of the universe
+          div.card 
+            h3 Expert Teaching
+            div.card-box 
+              div.card-img 
+                  img(src="/static/img/img3.png", alt="")
+              div.card-content 
+                  p this is the best dance academy of the universe
+
+    section#sponsorSection 
+          h2 Our Sponsors  
+          div.sponsors 
+            img(src="/static/img/apple.png", alt="" class="spimage")
+            img(src="/static/img/hp.png", alt="" class="spimage")
+            img(src="/static/img/ms.png", alt="" class="spimage")
+            img(src="/static/img/skype.png", alt="" class="spimage")
+          
+
+    footer 
+          | copyright & 2023 papai dance academy
+    script
+      include ../static/script.js
